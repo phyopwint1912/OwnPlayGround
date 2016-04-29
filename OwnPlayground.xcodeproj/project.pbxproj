@@ -16,6 +16,9 @@
 		CD68ECC11CCDC86300CF049F /* OwnPlaygroundUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD68ECC01CCDC86300CF049F /* OwnPlaygroundUITests.swift */; };
 		CDDB2BF61CD1E53D00964CDB /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDDB2BF51CD1E53D00964CDB /* CardView.swift */; };
 		CDDB2BF81CD1EAB700964CDB /* CardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDDB2BF71CD1EAB700964CDB /* CardTableViewCell.swift */; };
+		CDDB2BFD1CD3085E00964CDB /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDDB2BFC1CD3085E00964CDB /* MenuViewController.swift */; };
+		CDDB2C011CD30F6A00964CDB /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDDB2C001CD30F6A00964CDB /* SWRevealViewController.m */; };
+		CDDB2C041CD36A4200964CDB /* SliderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDDB2C031CD36A4200964CDB /* SliderViewController.swift */; };
 		CDF63F671CCF08F10031987C /* CalculatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDF63F661CCF08F10031987C /* CalculatorViewController.swift */; };
 		CDF63F691CCF19AF0031987C /* Calculation.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDF63F681CCF19AF0031987C /* Calculation.swift */; };
 		CDF63F6B1CCF47510031987C /* dict.db in Resources */ = {isa = PBXBuildFile; fileRef = CDF63F6A1CCF47510031987C /* dict.db */; };
@@ -64,6 +67,10 @@
 		CD68ECC21CCDC86300CF049F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CDDB2BF51CD1E53D00964CDB /* CardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		CDDB2BF71CD1EAB700964CDB /* CardTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardTableViewCell.swift; sourceTree = "<group>"; };
+		CDDB2BFC1CD3085E00964CDB /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		CDDB2BFF1CD30F6A00964CDB /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
+		CDDB2C001CD30F6A00964CDB /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		CDDB2C031CD36A4200964CDB /* SliderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SliderViewController.swift; sourceTree = "<group>"; };
 		CDF63F661CCF08F10031987C /* CalculatorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalculatorViewController.swift; sourceTree = "<group>"; };
 		CDF63F681CCF19AF0031987C /* Calculation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Calculation.swift; sourceTree = "<group>"; };
 		CDF63F6A1CCF47510031987C /* dict.db */ = {isa = PBXFileReference; lastKnownFileType = file; name = dict.db; path = "../../../Downloads/GeologicalDictionary-recentSearch/app/src/main/assets/dict.db"; sourceTree = "<group>"; };
@@ -133,21 +140,17 @@
 		CD68EC9F1CCDC86200CF049F /* OwnPlayground */ = {
 			isa = PBXGroup;
 			children = (
+				CDDB2C021CD3528E00964CDB /* Slideshow */,
+				CDDB2BFB1CD21A1400964CDB /* SliderNavigation */,
+				CDDB2BFA1CD219CA00964CDB /* Dictionary */,
 				CDDB2BF91CD20C6400964CDB /* Calculator */,
-				CDF63F831CCF76FD0031987C /* Model */,
-				CDF63F6A1CCF47510031987C /* dict.db */,
-				CDF63F771CCF76590031987C /* FMDB */,
 				CD68ECA01CCDC86300CF049F /* AppDelegate.swift */,
-				CD68ECA21CCDC86300CF049F /* ViewController.swift */,
 				CD68ECA41CCDC86300CF049F /* Main.storyboard */,
 				CD68ECA71CCDC86300CF049F /* Assets.xcassets */,
 				CD68ECA91CCDC86300CF049F /* LaunchScreen.storyboard */,
 				CD68ECAC1CCDC86300CF049F /* Info.plist */,
-				CDF63F6E1CCF6AF90031987C /* DetailViewController.swift */,
 				CDF63F751CCF74890031987C /* Bridging-Header.m */,
 				CDF63F741CCF74880031987C /* OwnPlayground-Bridging-Header.h */,
-				CDDB2BF51CD1E53D00964CDB /* CardView.swift */,
-				CDDB2BF71CD1EAB700964CDB /* CardTableViewCell.swift */,
 			);
 			path = OwnPlayground;
 			sourceTree = "<group>";
@@ -177,6 +180,46 @@
 				CDF63F681CCF19AF0031987C /* Calculation.swift */,
 			);
 			name = Calculator;
+			sourceTree = "<group>";
+		};
+		CDDB2BFA1CD219CA00964CDB /* Dictionary */ = {
+			isa = PBXGroup;
+			children = (
+				CDF63F6A1CCF47510031987C /* dict.db */,
+				CD68ECA21CCDC86300CF049F /* ViewController.swift */,
+				CDF63F6E1CCF6AF90031987C /* DetailViewController.swift */,
+				CDDB2BF51CD1E53D00964CDB /* CardView.swift */,
+				CDDB2BF71CD1EAB700964CDB /* CardTableViewCell.swift */,
+				CDF63F771CCF76590031987C /* FMDB */,
+				CDF63F831CCF76FD0031987C /* Model */,
+			);
+			name = Dictionary;
+			sourceTree = "<group>";
+		};
+		CDDB2BFB1CD21A1400964CDB /* SliderNavigation */ = {
+			isa = PBXGroup;
+			children = (
+				CDDB2BFE1CD30F6A00964CDB /* SWRevealViewController */,
+				CDDB2BFC1CD3085E00964CDB /* MenuViewController.swift */,
+			);
+			name = SliderNavigation;
+			sourceTree = "<group>";
+		};
+		CDDB2BFE1CD30F6A00964CDB /* SWRevealViewController */ = {
+			isa = PBXGroup;
+			children = (
+				CDDB2BFF1CD30F6A00964CDB /* SWRevealViewController.h */,
+				CDDB2C001CD30F6A00964CDB /* SWRevealViewController.m */,
+			);
+			path = SWRevealViewController;
+			sourceTree = "<group>";
+		};
+		CDDB2C021CD3528E00964CDB /* Slideshow */ = {
+			isa = PBXGroup;
+			children = (
+				CDDB2C031CD36A4200964CDB /* SliderViewController.swift */,
+			);
+			name = Slideshow;
 			sourceTree = "<group>";
 		};
 		CDF63F771CCF76590031987C /* FMDB */ = {
@@ -337,15 +380,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				CDF63F851CCF77640031987C /* Util.swift in Sources */,
+				CDDB2BFD1CD3085E00964CDB /* MenuViewController.swift in Sources */,
 				CD68ECA31CCDC86300CF049F /* ViewController.swift in Sources */,
 				CDF63F671CCF08F10031987C /* CalculatorViewController.swift in Sources */,
 				CDF63F6D1CCF52300031987C /* Word.swift in Sources */,
+				CDDB2C041CD36A4200964CDB /* SliderViewController.swift in Sources */,
 				CDF63F761CCF74890031987C /* Bridging-Header.m in Sources */,
 				CDF63F871CCF78070031987C /* ModelManager.swift in Sources */,
 				CDF63F821CCF76590031987C /* FMResultSet.m in Sources */,
 				CDDB2BF61CD1E53D00964CDB /* CardView.swift in Sources */,
 				CDF63F701CCF6AF90031987C /* DetailViewController.swift in Sources */,
 				CDF63F801CCF76590031987C /* FMDatabaseAdditions.m in Sources */,
+				CDDB2C011CD30F6A00964CDB /* SWRevealViewController.m in Sources */,
 				CD68ECA11CCDC86300CF049F /* AppDelegate.swift in Sources */,
 				CDF63F691CCF19AF0031987C /* Calculation.swift in Sources */,
 				CDF63F7F1CCF76590031987C /* FMDatabase.m in Sources */,

@@ -1,9 +1,9 @@
 //
 //  ModelManager.swift
-//  DataBaseDemo
+//  OwnPlayground
 //
-//  Created by Krupa-iMac on 05/08/14.
-//  Copyright (c) 2014 TheAppGuruz. All rights reserved.
+//  Created by Phyo Pwint  on 26/4/16.
+//  Copyright © 2016 Phyo Pwint . All rights reserved.
 //
 
 import UIKit

@@ -13,7 +13,7 @@ class ViewController: UITableViewController, UISearchResultsUpdating {
     var detailViewController: DetailViewController? = nil
     var words = [Word]()
     var filteredWords : [Word]!
-   
+    @IBOutlet var menuButton:UIBarButtonItem!
     let searchController = UISearchController(searchResultsController: nil)
     let mm = ModelManager.getInstance()
     override func viewDidLoad() {
@@ -24,6 +24,13 @@ class ViewController: UITableViewController, UISearchResultsUpdating {
         definesPresentationContext = true
         tableView.tableHeaderView = searchController.searchBar
         tableView.tableFooterView?.hidden = true
+        
+        //Implement the Slider navigation bar.
+        if revealViewController() != nil {
+            menuButton.target = revealViewController()
+            menuButton.action = #selector(SWRevealViewController.revealToggle(_:))
+            view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
+        }
     }
     
     override func didReceiveMemoryWarning() {
