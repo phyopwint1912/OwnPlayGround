@@ -1,5 +1,5 @@
 //
-//  SliderViewController.swift
+//  PageContentViewController.swift
 //  OwnPlayground
 //
 //  Created by Phyo Pwint  on 29/4/16.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SliderViewController: UIPageViewController, UIPageViewControllerDataSource {
+class PageContentViewController: UIPageViewController, UIPageViewControllerDataSource {
 
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -19,6 +19,7 @@
 		CDDB2BFD1CD3085E00964CDB /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDDB2BFC1CD3085E00964CDB /* MenuViewController.swift */; };
 		CDDB2C011CD30F6A00964CDB /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDDB2C001CD30F6A00964CDB /* SWRevealViewController.m */; };
 		CDDB2C041CD36A4200964CDB /* SliderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDDB2C031CD36A4200964CDB /* SliderViewController.swift */; };
+		CDDB2C061CD36DCF00964CDB /* PageContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDDB2C051CD36DCF00964CDB /* PageContentViewController.swift */; };
 		CDF63F671CCF08F10031987C /* CalculatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDF63F661CCF08F10031987C /* CalculatorViewController.swift */; };
 		CDF63F691CCF19AF0031987C /* Calculation.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDF63F681CCF19AF0031987C /* Calculation.swift */; };
 		CDF63F6B1CCF47510031987C /* dict.db in Resources */ = {isa = PBXBuildFile; fileRef = CDF63F6A1CCF47510031987C /* dict.db */; };
@@ -71,6 +72,7 @@
 		CDDB2BFF1CD30F6A00964CDB /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
 		CDDB2C001CD30F6A00964CDB /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
 		CDDB2C031CD36A4200964CDB /* SliderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SliderViewController.swift; sourceTree = "<group>"; };
+		CDDB2C051CD36DCF00964CDB /* PageContentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageContentViewController.swift; sourceTree = "<group>"; };
 		CDF63F661CCF08F10031987C /* CalculatorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalculatorViewController.swift; sourceTree = "<group>"; };
 		CDF63F681CCF19AF0031987C /* Calculation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Calculation.swift; sourceTree = "<group>"; };
 		CDF63F6A1CCF47510031987C /* dict.db */ = {isa = PBXFileReference; lastKnownFileType = file; name = dict.db; path = "../../../Downloads/GeologicalDictionary-recentSearch/app/src/main/assets/dict.db"; sourceTree = "<group>"; };
@@ -218,6 +220,7 @@
 			isa = PBXGroup;
 			children = (
 				CDDB2C031CD36A4200964CDB /* SliderViewController.swift */,
+				CDDB2C051CD36DCF00964CDB /* PageContentViewController.swift */,
 			);
 			name = Slideshow;
 			sourceTree = "<group>";
@@ -388,6 +391,7 @@
 				CDF63F761CCF74890031987C /* Bridging-Header.m in Sources */,
 				CDF63F871CCF78070031987C /* ModelManager.swift in Sources */,
 				CDF63F821CCF76590031987C /* FMResultSet.m in Sources */,
+				CDDB2C061CD36DCF00964CDB /* PageContentViewController.swift in Sources */,
 				CDDB2BF61CD1E53D00964CDB /* CardView.swift in Sources */,
 				CDF63F701CCF6AF90031987C /* DetailViewController.swift in Sources */,
 				CDF63F801CCF76590031987C /* FMDatabaseAdditions.m in Sources */,
