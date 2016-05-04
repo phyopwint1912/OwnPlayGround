@@ -20,9 +20,14 @@
 		CDDB2C011CD30F6A00964CDB /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDDB2C001CD30F6A00964CDB /* SWRevealViewController.m */; };
 		CDDB2C041CD36A4200964CDB /* SliderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDDB2C031CD36A4200964CDB /* SliderViewController.swift */; };
 		CDDB2C061CD36DCF00964CDB /* PageContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDDB2C051CD36DCF00964CDB /* PageContentViewController.swift */; };
+		CDDB2C081CD83EF200964CDB /* dict.db in Resources */ = {isa = PBXBuildFile; fileRef = CDDB2C071CD83EF200964CDB /* dict.db */; };
+		CDDB2C0D1CD87FA000964CDB /* 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CDDB2C0A1CD87FA000964CDB /* 1.jpg */; };
+		CDDB2C0E1CD87FA000964CDB /* 2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CDDB2C0B1CD87FA000964CDB /* 2.jpg */; };
+		CDDB2C0F1CD87FA000964CDB /* 3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CDDB2C0C1CD87FA000964CDB /* 3.jpg */; };
+		CDDB2C121CD893F800964CDB /* FaceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDDB2C111CD893F800964CDB /* FaceViewController.swift */; };
+		CDDB2C141CD8940B00964CDB /* FaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDDB2C131CD8940B00964CDB /* FaceView.swift */; };
 		CDF63F671CCF08F10031987C /* CalculatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDF63F661CCF08F10031987C /* CalculatorViewController.swift */; };
 		CDF63F691CCF19AF0031987C /* Calculation.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDF63F681CCF19AF0031987C /* Calculation.swift */; };
-		CDF63F6B1CCF47510031987C /* dict.db in Resources */ = {isa = PBXBuildFile; fileRef = CDF63F6A1CCF47510031987C /* dict.db */; };
 		CDF63F6D1CCF52300031987C /* Word.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDF63F6C1CCF52300031987C /* Word.swift */; };
 		CDF63F701CCF6AF90031987C /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDF63F6E1CCF6AF90031987C /* DetailViewController.swift */; };
 		CDF63F731CCF72770031987C /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = CDF63F721CCF72770031987C /* libsqlite3.0.tbd */; };
@@ -73,9 +78,14 @@
 		CDDB2C001CD30F6A00964CDB /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
 		CDDB2C031CD36A4200964CDB /* SliderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SliderViewController.swift; sourceTree = "<group>"; };
 		CDDB2C051CD36DCF00964CDB /* PageContentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageContentViewController.swift; sourceTree = "<group>"; };
+		CDDB2C071CD83EF200964CDB /* dict.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = dict.db; sourceTree = "<group>"; };
+		CDDB2C0A1CD87FA000964CDB /* 1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1.jpg; sourceTree = "<group>"; };
+		CDDB2C0B1CD87FA000964CDB /* 2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 2.jpg; sourceTree = "<group>"; };
+		CDDB2C0C1CD87FA000964CDB /* 3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 3.jpg; sourceTree = "<group>"; };
+		CDDB2C111CD893F800964CDB /* FaceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FaceViewController.swift; sourceTree = "<group>"; };
+		CDDB2C131CD8940B00964CDB /* FaceView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FaceView.swift; sourceTree = "<group>"; };
 		CDF63F661CCF08F10031987C /* CalculatorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalculatorViewController.swift; sourceTree = "<group>"; };
 		CDF63F681CCF19AF0031987C /* Calculation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Calculation.swift; sourceTree = "<group>"; };
-		CDF63F6A1CCF47510031987C /* dict.db */ = {isa = PBXFileReference; lastKnownFileType = file; name = dict.db; path = "../../../Downloads/GeologicalDictionary-recentSearch/app/src/main/assets/dict.db"; sourceTree = "<group>"; };
 		CDF63F6C1CCF52300031987C /* Word.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Word.swift; sourceTree = "<group>"; };
 		CDF63F6E1CCF6AF90031987C /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		CDF63F721CCF72770031987C /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
@@ -142,6 +152,7 @@
 		CD68EC9F1CCDC86200CF049F /* OwnPlayground */ = {
 			isa = PBXGroup;
 			children = (
+				CDDB2C101CD893D000964CDB /* ViewsExercise */,
 				CDDB2C021CD3528E00964CDB /* Slideshow */,
 				CDDB2BFB1CD21A1400964CDB /* SliderNavigation */,
 				CDDB2BFA1CD219CA00964CDB /* Dictionary */,
@@ -187,7 +198,7 @@
 		CDDB2BFA1CD219CA00964CDB /* Dictionary */ = {
 			isa = PBXGroup;
 			children = (
-				CDF63F6A1CCF47510031987C /* dict.db */,
+				CDDB2C071CD83EF200964CDB /* dict.db */,
 				CD68ECA21CCDC86300CF049F /* ViewController.swift */,
 				CDF63F6E1CCF6AF90031987C /* DetailViewController.swift */,
 				CDDB2BF51CD1E53D00964CDB /* CardView.swift */,
@@ -219,10 +230,30 @@
 		CDDB2C021CD3528E00964CDB /* Slideshow */ = {
 			isa = PBXGroup;
 			children = (
+				CDDB2C091CD87F8D00964CDB /* images */,
 				CDDB2C031CD36A4200964CDB /* SliderViewController.swift */,
 				CDDB2C051CD36DCF00964CDB /* PageContentViewController.swift */,
 			);
 			name = Slideshow;
+			sourceTree = "<group>";
+		};
+		CDDB2C091CD87F8D00964CDB /* images */ = {
+			isa = PBXGroup;
+			children = (
+				CDDB2C0A1CD87FA000964CDB /* 1.jpg */,
+				CDDB2C0B1CD87FA000964CDB /* 2.jpg */,
+				CDDB2C0C1CD87FA000964CDB /* 3.jpg */,
+			);
+			name = images;
+			sourceTree = "<group>";
+		};
+		CDDB2C101CD893D000964CDB /* ViewsExercise */ = {
+			isa = PBXGroup;
+			children = (
+				CDDB2C111CD893F800964CDB /* FaceViewController.swift */,
+				CDDB2C131CD8940B00964CDB /* FaceView.swift */,
+			);
+			name = ViewsExercise;
 			sourceTree = "<group>";
 		};
 		CDF63F771CCF76590031987C /* FMDB */ = {
@@ -354,10 +385,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				CD68ECAB1CCDC86300CF049F /* LaunchScreen.storyboard in Resources */,
+				CDDB2C081CD83EF200964CDB /* dict.db in Resources */,
+				CDDB2C0E1CD87FA000964CDB /* 2.jpg in Resources */,
 				CD68ECA81CCDC86300CF049F /* Assets.xcassets in Resources */,
+				CDDB2C0D1CD87FA000964CDB /* 1.jpg in Resources */,
 				CD68ECA61CCDC86300CF049F /* Main.storyboard in Resources */,
-				CDF63F6B1CCF47510031987C /* dict.db in Resources */,
 				CDF63F811CCF76590031987C /* fmdb.txt in Resources */,
+				CDDB2C0F1CD87FA000964CDB /* 3.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -384,6 +418,7 @@
 			files = (
 				CDF63F851CCF77640031987C /* Util.swift in Sources */,
 				CDDB2BFD1CD3085E00964CDB /* MenuViewController.swift in Sources */,
+				CDDB2C121CD893F800964CDB /* FaceViewController.swift in Sources */,
 				CD68ECA31CCDC86300CF049F /* ViewController.swift in Sources */,
 				CDF63F671CCF08F10031987C /* CalculatorViewController.swift in Sources */,
 				CDF63F6D1CCF52300031987C /* Word.swift in Sources */,
@@ -400,6 +435,7 @@
 				CDF63F691CCF19AF0031987C /* Calculation.swift in Sources */,
 				CDF63F7F1CCF76590031987C /* FMDatabase.m in Sources */,
 				CDDB2BF81CD1EAB700964CDB /* CardTableViewCell.swift in Sources */,
+				CDDB2C141CD8940B00964CDB /* FaceView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
