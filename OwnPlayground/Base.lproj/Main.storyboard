@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -256,7 +257,7 @@
                     </connections>
                 </searchDisplayController>
             </objects>
-            <point key="canvasLocation" x="1046" y="-1693"/>
+            <point key="canvasLocation" x="1489.5" y="-1581"/>
         </scene>
         <!--searchViewController-->
         <scene sceneID="six-YU-1Tb">
@@ -355,7 +356,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yod-r0-gYt" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationItem title="Title" id="kMc-HT-EV8"/>
             </objects>
-            <point key="canvasLocation" x="-154" y="1"/>
+            <point key="canvasLocation" x="1519.5" y="-145"/>
         </scene>
         <!--Detail View Controller-->
         <scene sceneID="qSe-pf-Uae">
@@ -399,7 +400,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="E4e-Gu-djJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="554" y="-5"/>
+            <point key="canvasLocation" x="2281.5" y="-137"/>
         </scene>
         <!--Reveal View Controller-->
         <scene sceneID="yID-PA-SCh">
@@ -422,7 +423,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Vr-fl-cYV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1349" y="-1127"/>
+            <point key="canvasLocation" x="-1260" y="-1127"/>
         </scene>
         <!--Calculator Navigation Controller-->
         <scene sceneID="lRb-Vs-vLp">
@@ -440,7 +441,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qxA-xs-Gd1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="298" y="-1693"/>
+            <point key="canvasLocation" x="693" y="-1589"/>
         </scene>
         <!--Face View Controller-->
         <scene sceneID="n4m-aw-OYb">
@@ -450,13 +451,17 @@
                         <viewControllerLayoutGuide type="top" id="fwG-QM-xgI"/>
                         <viewControllerLayoutGuide type="bottom" id="aij-c4-LyD"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="AZz-Hl-Pa2">
+                    <view key="view" contentMode="scaleToFill" id="AZz-Hl-Pa2" customClass="FaceView" customModule="OwnPlayground">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleAspectFit" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="12i-Xl-FWI" customClass="FaceView" customModule="OwnPlayground">
+                            <view contentMode="scaleAspectFit" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="12i-Xl-FWI" customClass="FaceView" customModule="OwnPlayground">
                                 <rect key="frame" x="126" y="103" width="367" height="425"/>
-                                <color key="backgroundColor" red="0.7019608021" green="0.7019608021" blue="0.7019608021" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="1" green="1" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="Uw6-Ry-r9I" appends="YES" id="ovN-Tm-aEk"/>
+                                </connections>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -487,12 +492,18 @@
                         <barButtonItem key="leftBarButtonItem" image="Image" id="EXe-KH-Khd"/>
                     </navigationItem>
                     <connections>
+                        <outlet property="faceView" destination="12i-Xl-FWI" id="lpe-TM-iQo"/>
                         <outlet property="menuButton" destination="EXe-KH-Khd" id="O8b-2a-oiE"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hxc-9J-5QA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="Uw6-Ry-r9I">
+                    <connections>
+                        <action selector="toggleEyes:" destination="PTS-53-9Ry" id="oid-jC-ObN"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="1045.5" y="-2413"/>
+            <point key="canvasLocation" x="1489.5" y="-2341"/>
         </scene>
         <!--Slider View Controller-->
         <scene sceneID="5hi-zj-Gn4">
@@ -503,6 +514,7 @@
                         <viewControllerLayoutGuide type="bottom" id="37O-nr-J2C"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="fJV-Ni-i01">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KWO-hY-PNc">
@@ -519,8 +531,7 @@
                                         <exclude reference="3jB-Dq-OCY"/>
                                     </mask>
                                 </variation>
-                                <variation key="widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="159" y="539" width="82" height="41"/>
+                                <variation key="widthClass=compact">
                                     <mask key="constraints">
                                         <include reference="3jB-Dq-OCY"/>
                                     </mask>
@@ -566,7 +577,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GOT-sq-ZCo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1045.5" y="-896"/>
+            <point key="canvasLocation" x="1519.5" y="-896"/>
         </scene>
         <!--Page Content View Controller-->
         <scene sceneID="dhT-7J-wh7">
@@ -631,28 +642,28 @@
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
-                                <exclude reference="8ho-SH-m5R"/>
-                                <exclude reference="KI3-8F-B1T"/>
-                                <exclude reference="YJp-aw-1TO"/>
                                 <exclude reference="3rm-KO-gJT"/>
                                 <exclude reference="sxm-W9-W2s"/>
                                 <exclude reference="wk5-ai-AgD"/>
+                                <exclude reference="8ho-SH-m5R"/>
+                                <exclude reference="KI3-8F-B1T"/>
+                                <exclude reference="YJp-aw-1TO"/>
                                 <exclude reference="DHb-bG-DDc"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="constraints">
+                                <include reference="3rm-KO-gJT"/>
+                                <exclude reference="I8v-Fm-HOz"/>
+                                <exclude reference="pHc-QN-0Te"/>
+                                <include reference="sxm-W9-W2s"/>
+                                <include reference="wk5-ai-AgD"/>
                                 <exclude reference="66m-sh-jyT"/>
                                 <include reference="8ho-SH-m5R"/>
                                 <include reference="KI3-8F-B1T"/>
                                 <include reference="YJp-aw-1TO"/>
                                 <exclude reference="gTV-EZ-O5W"/>
                                 <exclude reference="yJS-Iq-sqw"/>
-                                <include reference="3rm-KO-gJT"/>
-                                <exclude reference="I8v-Fm-HOz"/>
-                                <exclude reference="pHc-QN-0Te"/>
-                                <include reference="sxm-W9-W2s"/>
-                                <include reference="wk5-ai-AgD"/>
                                 <exclude reference="5cI-t9-nyF"/>
                                 <include reference="DHb-bG-DDc"/>
                             </mask>
@@ -666,7 +677,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fvl-3K-RYr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1672.5" y="-896"/>
+            <point key="canvasLocation" x="3034.5" y="-896"/>
         </scene>
         <!--Page View Controller-->
         <scene sceneID="wjc-qz-cnt">
@@ -696,7 +707,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="J0J-EF-kFc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-874.5" y="1"/>
+            <point key="canvasLocation" x="721.5" y="-91"/>
         </scene>
         <!--MenuItem View Controller-->
         <scene sceneID="r4U-vJ-YQ8">
@@ -800,7 +811,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uB9-p3-mKq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-481" y="-1713"/>
+            <point key="canvasLocation" x="-325.5" y="-1589"/>
         </scene>
         <!--Drawing Navigation Controller-->
         <scene sceneID="4Pz-1e-sqi">
@@ -818,7 +829,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uoD-Sw-10k" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="297" y="-2405"/>
+            <point key="canvasLocation" x="693" y="-2333"/>
         </scene>
         <!--Slider Navigation Controller-->
         <scene sceneID="0dD-dV-Vze">
@@ -836,7 +847,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="v8r-mk-ntK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="297" y="-884"/>
+            <point key="canvasLocation" x="693" y="-880"/>
         </scene>
     </scenes>
     <resources>

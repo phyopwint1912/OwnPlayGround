@@ -14,6 +14,7 @@
 		CD68ECAB1CCDC86300CF049F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD68ECA91CCDC86300CF049F /* LaunchScreen.storyboard */; };
 		CD68ECB61CCDC86300CF049F /* OwnPlaygroundTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD68ECB51CCDC86300CF049F /* OwnPlaygroundTests.swift */; };
 		CD68ECC11CCDC86300CF049F /* OwnPlaygroundUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD68ECC01CCDC86300CF049F /* OwnPlaygroundUITests.swift */; };
+		CDB980961CDB3C6800310188 /* FaceExpression.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDB980951CDB3C6800310188 /* FaceExpression.swift */; };
 		CDDB2BF61CD1E53D00964CDB /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDDB2BF51CD1E53D00964CDB /* CardView.swift */; };
 		CDDB2BF81CD1EAB700964CDB /* CardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDDB2BF71CD1EAB700964CDB /* CardTableViewCell.swift */; };
 		CDDB2BFD1CD3085E00964CDB /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDDB2BFC1CD3085E00964CDB /* MenuViewController.swift */; };
@@ -71,6 +72,7 @@
 		CD68ECBC1CCDC86300CF049F /* OwnPlaygroundUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OwnPlaygroundUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD68ECC01CCDC86300CF049F /* OwnPlaygroundUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OwnPlaygroundUITests.swift; sourceTree = "<group>"; };
 		CD68ECC21CCDC86300CF049F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CDB980951CDB3C6800310188 /* FaceExpression.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FaceExpression.swift; sourceTree = "<group>"; };
 		CDDB2BF51CD1E53D00964CDB /* CardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		CDDB2BF71CD1EAB700964CDB /* CardTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardTableViewCell.swift; sourceTree = "<group>"; };
 		CDDB2BFC1CD3085E00964CDB /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
@@ -252,6 +254,7 @@
 			children = (
 				CDDB2C111CD893F800964CDB /* FaceViewController.swift */,
 				CDDB2C131CD8940B00964CDB /* FaceView.swift */,
+				CDB980951CDB3C6800310188 /* FaceExpression.swift */,
 			);
 			name = ViewsExercise;
 			sourceTree = "<group>";
@@ -418,6 +421,7 @@
 			files = (
 				CDF63F851CCF77640031987C /* Util.swift in Sources */,
 				CDDB2BFD1CD3085E00964CDB /* MenuViewController.swift in Sources */,
+				CDB980961CDB3C6800310188 /* FaceExpression.swift in Sources */,
 				CDDB2C121CD893F800964CDB /* FaceViewController.swift in Sources */,
 				CD68ECA31CCDC86300CF049F /* ViewController.swift in Sources */,
 				CDF63F671CCF08F10031987C /* CalculatorViewController.swift in Sources */,
