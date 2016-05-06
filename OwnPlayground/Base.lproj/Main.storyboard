@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Mdd-ur-MM1">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="jE6-XW-EFT">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -257,12 +257,12 @@
                     </connections>
                 </searchDisplayController>
             </objects>
-            <point key="canvasLocation" x="1489.5" y="-1581"/>
+            <point key="canvasLocation" x="2407.5" y="-1581"/>
         </scene>
-        <!--searchViewController-->
+        <!--Search View Controller-->
         <scene sceneID="six-YU-1Tb">
             <objects>
-                <tableViewController id="v8f-Ua-7QJ" userLabel="searchViewController" customClass="ViewController" customModule="OwnPlayground" sceneMemberID="viewController">
+                <tableViewController id="v8f-Ua-7QJ" userLabel="Search View Controller" customClass="ViewController" customModule="OwnPlayground" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="72" sectionHeaderHeight="1" sectionFooterHeight="1" id="axf-S6-Wbs">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -423,7 +423,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Vr-fl-cYV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1260" y="-1127"/>
+            <point key="canvasLocation" x="-1218" y="-1127"/>
         </scene>
         <!--Calculator Navigation Controller-->
         <scene sceneID="lRb-Vs-vLp">
@@ -441,7 +441,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qxA-xs-Gd1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="693" y="-1589"/>
+            <point key="canvasLocation" x="1611" y="-1589"/>
         </scene>
         <!--Face View Controller-->
         <scene sceneID="n4m-aw-OYb">
@@ -577,7 +577,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GOT-sq-ZCo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1519.5" y="-896"/>
+            <point key="canvasLocation" x="2437.5" y="-896"/>
         </scene>
         <!--Page Content View Controller-->
         <scene sceneID="dhT-7J-wh7">
@@ -677,7 +677,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fvl-3K-RYr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3034.5" y="-896"/>
+            <point key="canvasLocation" x="3952.5" y="-896"/>
         </scene>
         <!--Page View Controller-->
         <scene sceneID="wjc-qz-cnt">
@@ -689,7 +689,7 @@
                 </pageViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Zuz-0O-lDQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2289" y="-896"/>
+            <point key="canvasLocation" x="3207" y="-896"/>
         </scene>
         <!--Dictionary Navigation Controller-->
         <scene sceneID="d3V-sJ-nc0">
@@ -811,7 +811,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uB9-p3-mKq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-325.5" y="-1589"/>
+            <point key="canvasLocation" x="592.5" y="-1589"/>
         </scene>
         <!--Drawing Navigation Controller-->
         <scene sceneID="4Pz-1e-sqi">
@@ -847,11 +847,90 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="v8r-mk-ntK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="693" y="-880"/>
+            <point key="canvasLocation" x="1611" y="-880"/>
+        </scene>
+        <!--Login View Controller-->
+        <scene sceneID="ivu-93-Yux">
+            <objects>
+                <viewController id="jE6-XW-EFT" userLabel="Login View Controller" customClass="LoginViewController" customModule="OwnPlayground" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="gEF-JS-yo4"/>
+                        <viewControllerLayoutGuide type="bottom" id="p1L-9n-dKu"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="nnl-GV-udp">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ba3-L5-ekF">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.80000001190000003" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <size key="titleShadowOffset" width="5" height="2.2250738585072014e-308"/>
+                                <state key="normal" title="Signing In">
+                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="126" y="393" width="149" height="57"/>
+                                </variation>
+                                <connections>
+                                    <action selector="makeLogin:" destination="jE6-XW-EFT" eventType="touchUpInside" id="N4I-fR-644"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="p.png" translatesAutoresizingMaskIntoConstraints="NO" id="NdL-Ub-Jhi">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="153" y="62" width="95" height="93"/>
+                                </variation>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="x3N-FU-QHo">
+                                <rect key="frame" x="-25" y="-30" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="80" y="195" width="229" height="49"/>
+                                </variation>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lfR-YO-NNg">
+                                <rect key="frame" x="-25" y="-30" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="80" y="262" width="229" height="49"/>
+                                </variation>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="ba3-L5-ekF"/>
+                                <exclude reference="NdL-Ub-Jhi"/>
+                                <exclude reference="x3N-FU-QHo"/>
+                                <exclude reference="lfR-YO-NNg"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="ba3-L5-ekF"/>
+                                <include reference="NdL-Ub-Jhi"/>
+                                <include reference="x3N-FU-QHo"/>
+                                <include reference="lfR-YO-NNg"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="btnSignIn" destination="ba3-L5-ekF" id="Xny-Hx-z0P"/>
+                        <outlet property="txtPassword" destination="lfR-YO-NNg" id="oof-DU-l9l"/>
+                        <outlet property="txtUsername" destination="x3N-FU-QHo" id="5bA-5V-9tG"/>
+                        <segue destination="Mdd-ur-MM1" kind="show" identifier="userLoginSegue" id="p2g-hQ-3jb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Cn1-Ly-SDd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1978.5" y="-1127"/>
         </scene>
     </scenes>
     <resources>
         <image name="Image" width="22" height="22"/>
+        <image name="p.png" width="1250" height="1250"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="T6G-fV-N2U"/>

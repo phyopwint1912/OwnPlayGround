@@ -15,6 +15,10 @@
 		CD68ECB61CCDC86300CF049F /* OwnPlaygroundTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD68ECB51CCDC86300CF049F /* OwnPlaygroundTests.swift */; };
 		CD68ECC11CCDC86300CF049F /* OwnPlaygroundUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD68ECC01CCDC86300CF049F /* OwnPlaygroundUITests.swift */; };
 		CDB980961CDB3C6800310188 /* FaceExpression.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDB980951CDB3C6800310188 /* FaceExpression.swift */; };
+		CDB980991CDC438E00310188 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDB980981CDC438E00310188 /* LoginViewController.swift */; };
+		CDB9809B1CDC4D6700310188 /* 4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CDB9809A1CDC4D6700310188 /* 4.jpg */; };
+		CDB9809D1CDC57A000310188 /* p.png in Resources */ = {isa = PBXBuildFile; fileRef = CDB9809C1CDC57A000310188 /* p.png */; };
+		CDB980A11CDC710900310188 /* KeychainWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = CDB980A01CDC710900310188 /* KeychainWrapper.m */; };
 		CDDB2BF61CD1E53D00964CDB /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDDB2BF51CD1E53D00964CDB /* CardView.swift */; };
 		CDDB2BF81CD1EAB700964CDB /* CardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDDB2BF71CD1EAB700964CDB /* CardTableViewCell.swift */; };
 		CDDB2BFD1CD3085E00964CDB /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDDB2BFC1CD3085E00964CDB /* MenuViewController.swift */; };
@@ -73,6 +77,11 @@
 		CD68ECC01CCDC86300CF049F /* OwnPlaygroundUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OwnPlaygroundUITests.swift; sourceTree = "<group>"; };
 		CD68ECC21CCDC86300CF049F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CDB980951CDB3C6800310188 /* FaceExpression.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FaceExpression.swift; sourceTree = "<group>"; };
+		CDB980981CDC438E00310188 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		CDB9809A1CDC4D6700310188 /* 4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 4.jpg; sourceTree = "<group>"; };
+		CDB9809C1CDC57A000310188 /* p.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = p.png; sourceTree = "<group>"; };
+		CDB9809F1CDC710900310188 /* KeychainWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeychainWrapper.h; sourceTree = "<group>"; };
+		CDB980A01CDC710900310188 /* KeychainWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeychainWrapper.m; sourceTree = "<group>"; };
 		CDDB2BF51CD1E53D00964CDB /* CardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		CDDB2BF71CD1EAB700964CDB /* CardTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardTableViewCell.swift; sourceTree = "<group>"; };
 		CDDB2BFC1CD3085E00964CDB /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
@@ -154,6 +163,8 @@
 		CD68EC9F1CCDC86200CF049F /* OwnPlayground */ = {
 			isa = PBXGroup;
 			children = (
+				CDDB2C091CD87F8D00964CDB /* images */,
+				CDB980971CDC433C00310188 /* LoginController */,
 				CDDB2C101CD893D000964CDB /* ViewsExercise */,
 				CDDB2C021CD3528E00964CDB /* Slideshow */,
 				CDDB2BFB1CD21A1400964CDB /* SliderNavigation */,
@@ -186,6 +197,24 @@
 				CD68ECC21CCDC86300CF049F /* Info.plist */,
 			);
 			path = OwnPlaygroundUITests;
+			sourceTree = "<group>";
+		};
+		CDB980971CDC433C00310188 /* LoginController */ = {
+			isa = PBXGroup;
+			children = (
+				CDB9809E1CDC710900310188 /* KeychainWrapper */,
+				CDB980981CDC438E00310188 /* LoginViewController.swift */,
+			);
+			name = LoginController;
+			sourceTree = "<group>";
+		};
+		CDB9809E1CDC710900310188 /* KeychainWrapper */ = {
+			isa = PBXGroup;
+			children = (
+				CDB9809F1CDC710900310188 /* KeychainWrapper.h */,
+				CDB980A01CDC710900310188 /* KeychainWrapper.m */,
+			);
+			path = KeychainWrapper;
 			sourceTree = "<group>";
 		};
 		CDDB2BF91CD20C6400964CDB /* Calculator */ = {
@@ -232,7 +261,6 @@
 		CDDB2C021CD3528E00964CDB /* Slideshow */ = {
 			isa = PBXGroup;
 			children = (
-				CDDB2C091CD87F8D00964CDB /* images */,
 				CDDB2C031CD36A4200964CDB /* SliderViewController.swift */,
 				CDDB2C051CD36DCF00964CDB /* PageContentViewController.swift */,
 			);
@@ -243,6 +271,8 @@
 			isa = PBXGroup;
 			children = (
 				CDDB2C0A1CD87FA000964CDB /* 1.jpg */,
+				CDB9809C1CDC57A000310188 /* p.png */,
+				CDB9809A1CDC4D6700310188 /* 4.jpg */,
 				CDDB2C0B1CD87FA000964CDB /* 2.jpg */,
 				CDDB2C0C1CD87FA000964CDB /* 3.jpg */,
 			);
@@ -393,7 +423,9 @@
 				CD68ECA81CCDC86300CF049F /* Assets.xcassets in Resources */,
 				CDDB2C0D1CD87FA000964CDB /* 1.jpg in Resources */,
 				CD68ECA61CCDC86300CF049F /* Main.storyboard in Resources */,
+				CDB9809B1CDC4D6700310188 /* 4.jpg in Resources */,
 				CDF63F811CCF76590031987C /* fmdb.txt in Resources */,
+				CDB9809D1CDC57A000310188 /* p.png in Resources */,
 				CDDB2C0F1CD87FA000964CDB /* 3.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -429,9 +461,11 @@
 				CDDB2C041CD36A4200964CDB /* SliderViewController.swift in Sources */,
 				CDF63F761CCF74890031987C /* Bridging-Header.m in Sources */,
 				CDF63F871CCF78070031987C /* ModelManager.swift in Sources */,
+				CDB980991CDC438E00310188 /* LoginViewController.swift in Sources */,
 				CDF63F821CCF76590031987C /* FMResultSet.m in Sources */,
 				CDDB2C061CD36DCF00964CDB /* PageContentViewController.swift in Sources */,
 				CDDB2BF61CD1E53D00964CDB /* CardView.swift in Sources */,
+				CDB980A11CDC710900310188 /* KeychainWrapper.m in Sources */,
 				CDF63F701CCF6AF90031987C /* DetailViewController.swift in Sources */,
 				CDF63F801CCF76590031987C /* FMDatabaseAdditions.m in Sources */,
 				CDDB2C011CD30F6A00964CDB /* SWRevealViewController.m in Sources */,
