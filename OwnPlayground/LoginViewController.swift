@@ -19,7 +19,7 @@ class LoginViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         assignBackground()
-        designingCompnent()
+        designingComponent()
     }
     
     func printMessage(msgTitle: String, msg:String) {
@@ -36,8 +36,8 @@ class LoginViewController: UIViewController {
     
     
     func checkLogin(username: String, password: String ) -> Bool {
-        if password == MyKeychainWrapper.myObjectForKey("v_Data") as? String &&
-            username == NSUserDefaults.standardUserDefaults().valueForKey("username") as? String {
+        if (password == passwordKey &&
+            username == usernameKey) {
             return true
         } else {
             return false
@@ -49,42 +49,25 @@ class LoginViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    
-    let MyKeychainWrapper = KeychainWrapper()
-    let createLoginButtonTag = 0
-    let loginButtonTag = 1
-    
     @IBAction func makeLogin(sender: UIButton) {
         if(txtPassword.text == "" && txtUsername.text == "")
         {
             printMessage("Login Problem", msg: "UserName or Password Fill")
         }
+        else {
+            if (checkLogin(txtUsername.text!,password: txtPassword.text!)) {
+                let defaults = NSUserDefaults.standardUserDefaults()
+                defaults.setObject(txtUsername.text!, forKey: "userNameKey")
+               self.performSegueWithIdentifier("userLoginSegue", sender: self)
+            }
+            else {
+                printMessage("Login Problem", msg: "UserName or Password Fill")
+            }
         
+        }
         txtUsername.resignFirstResponder()
         txtPassword.resignFirstResponder()
         
-        if sender.tag == createLoginButtonTag {
-            
-            let hasLoginKey = NSUserDefaults.standardUserDefaults().boolForKey("hasLoginKey")
-            if hasLoginKey == false {
-                NSUserDefaults.standardUserDefaults().setValue(self.txtUsername.text, forKey: "username")
-            }
-            
-            MyKeychainWrapper.mySetObject(txtPassword.text, forKey:kSecValueData)
-            MyKeychainWrapper.writeToKeychain()
-            NSUserDefaults.standardUserDefaults().setBool(true, forKey: "hasLoginKey")
-            NSUserDefaults.standardUserDefaults().synchronize()
-            btnSignIn.tag = loginButtonTag
-            
-            performSegueWithIdentifier("userLoginSegue", sender: self)
-        }
-        else if sender.tag == loginButtonTag {
-            if checkLogin(txtUsername.text!, password: txtPassword.text!) {
-                performSegueWithIdentifier("userLoginSegue", sender: self)
-            } else {
-                printMessage("Login Problem", msg: "Wrong username or password")
-            }
-        }
     }
     
     
@@ -97,8 +80,7 @@ class LoginViewController: UIViewController {
         }
     }
     
-    func designingCompnent() {
-        
+    func designingComponent() {
         let paddingView = UIView(frame: CGRectMake(0, 0, 10, self.txtUsername.frame.height))
         txtUsername.leftView = paddingView
         txtUsername.leftViewMode = UITextFieldViewMode.Always

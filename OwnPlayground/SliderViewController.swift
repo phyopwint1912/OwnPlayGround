@@ -69,8 +69,9 @@ class SliderViewController: UIViewController, UIPageViewControllerDataSource {
         
         vc.strPhotoName = self.pageImages[index]as! String
         
-        vc.strTitle = self.pageTitles[index]as! String
+        //vc.strTitle = self.pageTitles[index]as! String
         
+        vc.strTitle  = NSUserDefaults.standardUserDefaults().objectForKey("username") as! String
         vc.pageIndex = index
         
         

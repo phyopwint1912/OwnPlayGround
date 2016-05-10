@@ -18,7 +18,6 @@
 		CDB980991CDC438E00310188 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDB980981CDC438E00310188 /* LoginViewController.swift */; };
 		CDB9809B1CDC4D6700310188 /* 4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CDB9809A1CDC4D6700310188 /* 4.jpg */; };
 		CDB9809D1CDC57A000310188 /* p.png in Resources */ = {isa = PBXBuildFile; fileRef = CDB9809C1CDC57A000310188 /* p.png */; };
-		CDB980A11CDC710900310188 /* KeychainWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = CDB980A01CDC710900310188 /* KeychainWrapper.m */; };
 		CDDB2BF61CD1E53D00964CDB /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDDB2BF51CD1E53D00964CDB /* CardView.swift */; };
 		CDDB2BF81CD1EAB700964CDB /* CardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDDB2BF71CD1EAB700964CDB /* CardTableViewCell.swift */; };
 		CDDB2BFD1CD3085E00964CDB /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDDB2BFC1CD3085E00964CDB /* MenuViewController.swift */; };
@@ -80,8 +79,6 @@
 		CDB980981CDC438E00310188 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		CDB9809A1CDC4D6700310188 /* 4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 4.jpg; sourceTree = "<group>"; };
 		CDB9809C1CDC57A000310188 /* p.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = p.png; sourceTree = "<group>"; };
-		CDB9809F1CDC710900310188 /* KeychainWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeychainWrapper.h; sourceTree = "<group>"; };
-		CDB980A01CDC710900310188 /* KeychainWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeychainWrapper.m; sourceTree = "<group>"; };
 		CDDB2BF51CD1E53D00964CDB /* CardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		CDDB2BF71CD1EAB700964CDB /* CardTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardTableViewCell.swift; sourceTree = "<group>"; };
 		CDDB2BFC1CD3085E00964CDB /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
@@ -202,19 +199,9 @@
 		CDB980971CDC433C00310188 /* LoginController */ = {
 			isa = PBXGroup;
 			children = (
-				CDB9809E1CDC710900310188 /* KeychainWrapper */,
 				CDB980981CDC438E00310188 /* LoginViewController.swift */,
 			);
 			name = LoginController;
-			sourceTree = "<group>";
-		};
-		CDB9809E1CDC710900310188 /* KeychainWrapper */ = {
-			isa = PBXGroup;
-			children = (
-				CDB9809F1CDC710900310188 /* KeychainWrapper.h */,
-				CDB980A01CDC710900310188 /* KeychainWrapper.m */,
-			);
-			path = KeychainWrapper;
 			sourceTree = "<group>";
 		};
 		CDDB2BF91CD20C6400964CDB /* Calculator */ = {
@@ -465,7 +452,6 @@
 				CDF63F821CCF76590031987C /* FMResultSet.m in Sources */,
 				CDDB2C061CD36DCF00964CDB /* PageContentViewController.swift in Sources */,
 				CDDB2BF61CD1E53D00964CDB /* CardView.swift in Sources */,
-				CDB980A11CDC710900310188 /* KeychainWrapper.m in Sources */,
 				CDF63F701CCF6AF90031987C /* DetailViewController.swift in Sources */,
 				CDF63F801CCF76590031987C /* FMDatabaseAdditions.m in Sources */,
 				CDDB2C011CD30F6A00964CDB /* SWRevealViewController.m in Sources */,
