@@ -15,7 +15,7 @@ class FaceView: UIView {
     var scale: CGFloat = 0.90 { didSet { setNeedsDisplay() } }
     
     @IBInspectable
-    var color: UIColor = UIColor.brownColor() { didSet { setNeedsDisplay() } }
+    var color: UIColor = UIColor.redColor() { didSet { setNeedsDisplay() } }
     
     @IBInspectable
     var lineWeight: CGFloat = 4.0 { didSet { setNeedsDisplay() } }

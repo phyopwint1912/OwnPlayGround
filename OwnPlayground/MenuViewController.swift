@@ -17,7 +17,7 @@ class MenuViewController: UITableViewController {
         super.viewDidLoad()
         let defaults = NSUserDefaults.standardUserDefaults()
         if let name = defaults.stringForKey("userNameKey") {
-            userName.text = name
+            userName.text = "Welcome " + name
         }
         _ = UITapGestureRecognizer(target: self, action: #selector(MenuViewController.logOutPlay(_:)))
         // Do any additional setup after loading the view.

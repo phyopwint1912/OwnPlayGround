@@ -89,9 +89,12 @@ class LoginViewController: UIViewController {
         txtPassword.leftView = paddingView2
         txtPassword.leftViewMode = UITextFieldViewMode.Always
         
-        txtUsername.backgroundColor = UIColor.blackColor().colorWithAlphaComponent(0.3)
-        txtPassword.backgroundColor = UIColor.blackColor().colorWithAlphaComponent(0.3)
+        txtUsername.backgroundColor = UIColor.blackColor().colorWithAlphaComponent(0.5)
+        txtPassword.backgroundColor = UIColor.blackColor().colorWithAlphaComponent(0.5)
         
+        txtUsername.textColor = UIColor.whiteColor()
+        txtPassword.textColor = UIColor.whiteColor()
+
         txtUsername.layer.cornerRadius = 5
         txtUsername.layer.borderWidth = 1
         txtUsername.layer.borderColor = UIColor.grayColor().CGColor
@@ -107,7 +110,7 @@ class LoginViewController: UIViewController {
     
     
     func assignBackground(){
-        let background = UIImage(named: "4.jpg")
+        let background = UIImage(named: "bg.jpg")
         var imageView : UIImageView!
         imageView = UIImageView(frame: view.bounds)
         imageView.contentMode =  UIViewContentMode.ScaleAspectFill

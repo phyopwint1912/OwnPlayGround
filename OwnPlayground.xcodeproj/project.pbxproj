@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CD0EAA591D25066B0099A7D1 /* bg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CD0EAA581D25066B0099A7D1 /* bg.jpg */; };
 		CD68ECA11CCDC86300CF049F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD68ECA01CCDC86300CF049F /* AppDelegate.swift */; };
 		CD68ECA31CCDC86300CF049F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD68ECA21CCDC86300CF049F /* ViewController.swift */; };
 		CD68ECA61CCDC86300CF049F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD68ECA41CCDC86300CF049F /* Main.storyboard */; };
@@ -14,10 +15,9 @@
 		CD68ECAB1CCDC86300CF049F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD68ECA91CCDC86300CF049F /* LaunchScreen.storyboard */; };
 		CD68ECB61CCDC86300CF049F /* OwnPlaygroundTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD68ECB51CCDC86300CF049F /* OwnPlaygroundTests.swift */; };
 		CD68ECC11CCDC86300CF049F /* OwnPlaygroundUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD68ECC01CCDC86300CF049F /* OwnPlaygroundUITests.swift */; };
+		CDA2F98A1CE1CF9000859480 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDA2F9891CE1CF9000859480 /* MapViewController.swift */; };
 		CDB980961CDB3C6800310188 /* FaceExpression.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDB980951CDB3C6800310188 /* FaceExpression.swift */; };
 		CDB980991CDC438E00310188 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDB980981CDC438E00310188 /* LoginViewController.swift */; };
-		CDB9809B1CDC4D6700310188 /* 4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CDB9809A1CDC4D6700310188 /* 4.jpg */; };
-		CDB9809D1CDC57A000310188 /* p.png in Resources */ = {isa = PBXBuildFile; fileRef = CDB9809C1CDC57A000310188 /* p.png */; };
 		CDDB2BF61CD1E53D00964CDB /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDDB2BF51CD1E53D00964CDB /* CardView.swift */; };
 		CDDB2BF81CD1EAB700964CDB /* CardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDDB2BF71CD1EAB700964CDB /* CardTableViewCell.swift */; };
 		CDDB2BFD1CD3085E00964CDB /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDDB2BFC1CD3085E00964CDB /* MenuViewController.swift */; };
@@ -62,6 +62,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CD0EAA581D25066B0099A7D1 /* bg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bg.jpg; sourceTree = "<group>"; };
 		CD68EC9D1CCDC86200CF049F /* OwnPlayground.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OwnPlayground.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD68ECA01CCDC86300CF049F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CD68ECA21CCDC86300CF049F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -75,10 +76,9 @@
 		CD68ECBC1CCDC86300CF049F /* OwnPlaygroundUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OwnPlaygroundUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD68ECC01CCDC86300CF049F /* OwnPlaygroundUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OwnPlaygroundUITests.swift; sourceTree = "<group>"; };
 		CD68ECC21CCDC86300CF049F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CDA2F9891CE1CF9000859480 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		CDB980951CDB3C6800310188 /* FaceExpression.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FaceExpression.swift; sourceTree = "<group>"; };
 		CDB980981CDC438E00310188 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		CDB9809A1CDC4D6700310188 /* 4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 4.jpg; sourceTree = "<group>"; };
-		CDB9809C1CDC57A000310188 /* p.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = p.png; sourceTree = "<group>"; };
 		CDDB2BF51CD1E53D00964CDB /* CardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		CDDB2BF71CD1EAB700964CDB /* CardTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardTableViewCell.swift; sourceTree = "<group>"; };
 		CDDB2BFC1CD3085E00964CDB /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
@@ -160,6 +160,7 @@
 		CD68EC9F1CCDC86200CF049F /* OwnPlayground */ = {
 			isa = PBXGroup;
 			children = (
+				CDA2F9881CE1CF5C00859480 /* MapView */,
 				CDDB2C091CD87F8D00964CDB /* images */,
 				CDB980971CDC433C00310188 /* LoginController */,
 				CDDB2C101CD893D000964CDB /* ViewsExercise */,
@@ -194,6 +195,14 @@
 				CD68ECC21CCDC86300CF049F /* Info.plist */,
 			);
 			path = OwnPlaygroundUITests;
+			sourceTree = "<group>";
+		};
+		CDA2F9881CE1CF5C00859480 /* MapView */ = {
+			isa = PBXGroup;
+			children = (
+				CDA2F9891CE1CF9000859480 /* MapViewController.swift */,
+			);
+			name = MapView;
 			sourceTree = "<group>";
 		};
 		CDB980971CDC433C00310188 /* LoginController */ = {
@@ -258,8 +267,7 @@
 			isa = PBXGroup;
 			children = (
 				CDDB2C0A1CD87FA000964CDB /* 1.jpg */,
-				CDB9809C1CDC57A000310188 /* p.png */,
-				CDB9809A1CDC4D6700310188 /* 4.jpg */,
+				CD0EAA581D25066B0099A7D1 /* bg.jpg */,
 				CDDB2C0B1CD87FA000964CDB /* 2.jpg */,
 				CDDB2C0C1CD87FA000964CDB /* 3.jpg */,
 			);
@@ -410,9 +418,8 @@
 				CD68ECA81CCDC86300CF049F /* Assets.xcassets in Resources */,
 				CDDB2C0D1CD87FA000964CDB /* 1.jpg in Resources */,
 				CD68ECA61CCDC86300CF049F /* Main.storyboard in Resources */,
-				CDB9809B1CDC4D6700310188 /* 4.jpg in Resources */,
 				CDF63F811CCF76590031987C /* fmdb.txt in Resources */,
-				CDB9809D1CDC57A000310188 /* p.png in Resources */,
+				CD0EAA591D25066B0099A7D1 /* bg.jpg in Resources */,
 				CDDB2C0F1CD87FA000964CDB /* 3.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -447,6 +454,7 @@
 				CDF63F6D1CCF52300031987C /* Word.swift in Sources */,
 				CDDB2C041CD36A4200964CDB /* SliderViewController.swift in Sources */,
 				CDF63F761CCF74890031987C /* Bridging-Header.m in Sources */,
+				CDA2F98A1CE1CF9000859480 /* MapViewController.swift in Sources */,
 				CDF63F871CCF78070031987C /* ModelManager.swift in Sources */,
 				CDB980991CDC438E00310188 /* LoginViewController.swift in Sources */,
 				CDF63F821CCF76590031987C /* FMResultSet.m in Sources */,
@@ -603,6 +611,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = OwnPlayground/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = sg.temasys.intern.OwnPlayground;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -617,6 +626,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = OwnPlayground/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = sg.temasys.intern.OwnPlayground;
 				PRODUCT_NAME = "$(TARGET_NAME)";

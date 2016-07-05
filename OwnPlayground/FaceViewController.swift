@@ -48,7 +48,7 @@ class FaceViewController: UIViewController {
     }
     
     @IBOutlet weak var menuButton: UIBarButtonItem!
-    var expression = FaceExpression(eyes: .Closed, eyeBrows: .Normal, mouth: .Smile) {
+    var expression = FaceExpression(eyes: .Open, eyeBrows: .Relaxed, mouth: .Smile) {
         didSet {
             updateUI()
         }
