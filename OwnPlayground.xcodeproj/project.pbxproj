@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		CD0EAA591D25066B0099A7D1 /* bg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CD0EAA581D25066B0099A7D1 /* bg.jpg */; };
+		CD1AC8991D3E2A36005CB5A4 /* fish.png in Resources */ = {isa = PBXBuildFile; fileRef = CD1AC8981D3E2A36005CB5A4 /* fish.png */; };
 		CD68ECA11CCDC86300CF049F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD68ECA01CCDC86300CF049F /* AppDelegate.swift */; };
 		CD68ECA31CCDC86300CF049F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD68ECA21CCDC86300CF049F /* ViewController.swift */; };
 		CD68ECA61CCDC86300CF049F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD68ECA41CCDC86300CF049F /* Main.storyboard */; };
@@ -15,7 +16,7 @@
 		CD68ECAB1CCDC86300CF049F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD68ECA91CCDC86300CF049F /* LaunchScreen.storyboard */; };
 		CD68ECB61CCDC86300CF049F /* OwnPlaygroundTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD68ECB51CCDC86300CF049F /* OwnPlaygroundTests.swift */; };
 		CD68ECC11CCDC86300CF049F /* OwnPlaygroundUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD68ECC01CCDC86300CF049F /* OwnPlaygroundUITests.swift */; };
-		CDA2F98A1CE1CF9000859480 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDA2F9891CE1CF9000859480 /* MapViewController.swift */; };
+		CDA2F98A1CE1CF9000859480 /* AnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDA2F9891CE1CF9000859480 /* AnimationViewController.swift */; };
 		CDB980961CDB3C6800310188 /* FaceExpression.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDB980951CDB3C6800310188 /* FaceExpression.swift */; };
 		CDB980991CDC438E00310188 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDB980981CDC438E00310188 /* LoginViewController.swift */; };
 		CDDB2BF61CD1E53D00964CDB /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDDB2BF51CD1E53D00964CDB /* CardView.swift */; };
@@ -63,6 +64,7 @@
 
 /* Begin PBXFileReference section */
 		CD0EAA581D25066B0099A7D1 /* bg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bg.jpg; sourceTree = "<group>"; };
+		CD1AC8981D3E2A36005CB5A4 /* fish.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fish.png; sourceTree = "<group>"; };
 		CD68EC9D1CCDC86200CF049F /* OwnPlayground.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OwnPlayground.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD68ECA01CCDC86300CF049F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CD68ECA21CCDC86300CF049F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -76,7 +78,7 @@
 		CD68ECBC1CCDC86300CF049F /* OwnPlaygroundUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OwnPlaygroundUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD68ECC01CCDC86300CF049F /* OwnPlaygroundUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OwnPlaygroundUITests.swift; sourceTree = "<group>"; };
 		CD68ECC21CCDC86300CF049F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CDA2F9891CE1CF9000859480 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		CDA2F9891CE1CF9000859480 /* AnimationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimationViewController.swift; sourceTree = "<group>"; };
 		CDB980951CDB3C6800310188 /* FaceExpression.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FaceExpression.swift; sourceTree = "<group>"; };
 		CDB980981CDC438E00310188 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		CDDB2BF51CD1E53D00964CDB /* CardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
@@ -160,7 +162,7 @@
 		CD68EC9F1CCDC86200CF049F /* OwnPlayground */ = {
 			isa = PBXGroup;
 			children = (
-				CDA2F9881CE1CF5C00859480 /* MapView */,
+				CDA2F9881CE1CF5C00859480 /* AnimationView */,
 				CDDB2C091CD87F8D00964CDB /* images */,
 				CDB980971CDC433C00310188 /* LoginController */,
 				CDDB2C101CD893D000964CDB /* ViewsExercise */,
@@ -197,12 +199,12 @@
 			path = OwnPlaygroundUITests;
 			sourceTree = "<group>";
 		};
-		CDA2F9881CE1CF5C00859480 /* MapView */ = {
+		CDA2F9881CE1CF5C00859480 /* AnimationView */ = {
 			isa = PBXGroup;
 			children = (
-				CDA2F9891CE1CF9000859480 /* MapViewController.swift */,
+				CDA2F9891CE1CF9000859480 /* AnimationViewController.swift */,
 			);
-			name = MapView;
+			name = AnimationView;
 			sourceTree = "<group>";
 		};
 		CDB980971CDC433C00310188 /* LoginController */ = {
@@ -266,6 +268,7 @@
 		CDDB2C091CD87F8D00964CDB /* images */ = {
 			isa = PBXGroup;
 			children = (
+				CD1AC8981D3E2A36005CB5A4 /* fish.png */,
 				CDDB2C0A1CD87FA000964CDB /* 1.jpg */,
 				CD0EAA581D25066B0099A7D1 /* bg.jpg */,
 				CDDB2C0B1CD87FA000964CDB /* 2.jpg */,
@@ -413,6 +416,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CD68ECAB1CCDC86300CF049F /* LaunchScreen.storyboard in Resources */,
+				CD1AC8991D3E2A36005CB5A4 /* fish.png in Resources */,
 				CDDB2C081CD83EF200964CDB /* dict.db in Resources */,
 				CDDB2C0E1CD87FA000964CDB /* 2.jpg in Resources */,
 				CD68ECA81CCDC86300CF049F /* Assets.xcassets in Resources */,
@@ -454,7 +458,7 @@
 				CDF63F6D1CCF52300031987C /* Word.swift in Sources */,
 				CDDB2C041CD36A4200964CDB /* SliderViewController.swift in Sources */,
 				CDF63F761CCF74890031987C /* Bridging-Header.m in Sources */,
-				CDA2F98A1CE1CF9000859480 /* MapViewController.swift in Sources */,
+				CDA2F98A1CE1CF9000859480 /* AnimationViewController.swift in Sources */,
 				CDF63F871CCF78070031987C /* ModelManager.swift in Sources */,
 				CDB980991CDC438E00310188 /* LoginViewController.swift in Sources */,
 				CDF63F821CCF76590031987C /* FMResultSet.m in Sources */,
@@ -617,6 +621,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "OwnPlayground/OwnPlayground-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -631,6 +636,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = sg.temasys.intern.OwnPlayground;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "OwnPlayground/OwnPlayground-Bridging-Header.h";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};

@@ -18,6 +18,8 @@ class LoginViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        txtPassword.text = "ppt"
+        txtUsername.text = "ppt"
         assignBackground()
         designingComponent()
     }
